@@ -1,32 +1,86 @@
-.App {
+@font-face {
+  font-family: 'Muri';
+  src: url("./assets/fonts/Muri/Muli-Regular.ttf");
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#no-scroll-content {
+  height: 100vh;
+  width: 101vw;
+  overflow-y: scroll;
+}
+
+#about {
   text-align: center;
+  font-family: 'Muri';
+  padding-top: 20px;
+  color: #666666;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+#about h1 {
+  font-size: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.section-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  width: 100vw;
 }
 
-.App-link {
-  color: #61dafb;
+#link-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tilt-container {
+  height: 168px;
+  width: 200px;
 }
+
+.tilt-container #logo-sqaure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 168px;
+  width: 200px;
+}
+
+.tilt-container #logo-letters {
+  position: absolute;
+  top: 8.4px;
+  left: 10px;
+  height: 151.2px;
+  width: 180px;
+}
+/*# sourceMappingURL=app.css.map */

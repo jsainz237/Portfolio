@@ -1,0 +1,32 @@
+.link {
+  height: 50px;
+  width: 70px;
+  background-color: white;
+  margin: 0;
+  transform: translateX(-20px);
+  -webkit-transform: translateX(-20px);
+  -moz-transform: translateX(-20px);
+  -ms-transform: translateX(-20px);
+  transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -webkit-transition: all .2s ease;
+  text-decoration: none;
+  color: black;
+}
+
+.link div {
+  height: 100%;
+  width: 100%;
+}
+
+.link:hover {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+}
+
+.link:visited {
+  color: black;
+}
+/*# sourceMappingURL=linkStyling.css.map */

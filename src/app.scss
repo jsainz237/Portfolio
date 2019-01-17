@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'Muri';
+    src: url('./assets/fonts/Muri/Muli-Regular.ttf');
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#no-scroll-content {
+    height: 100vh;   
+    width: 101vw;
+    overflow-y: scroll;    
+ }
+
+#about {
+    //padding-top: 100px;
+    text-align: center;
+    font-family: 'Muri';
+    padding-top: 20px;
+    color: #666666;
+
+    h1 {
+        font-size: 20px;
+    }
+}
+
+.section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#link-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tilt-container {
+    height: (.84) * 200px;
+    width: 200px;
+
+
+    $logo-size: 200px;
+    #logo-sqaure {
+        position: absolute;
+        top: 0; left: 0;
+        height: (.84) * $logo-size;
+        width: $logo-size;
+    }
+
+    #logo-letters {
+        position: absolute;
+        top: .84 * ($logo-size / 20); left: ($logo-size / 20);
+        height: (.84) * ($logo-size - 20px);
+        width: $logo-size - 20px;
+    }
+}
