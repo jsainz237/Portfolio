@@ -7,7 +7,7 @@ import logoLetters from './assets/images/logo-letters.png'
 
 var Home = () => (
     <div className='section-container' style={{ backgroundColor: '#171717'}}>
-        <div style={{ height: 'auto' }}>
+        <div id='home-content'>
             
             {/* Logo render */}
             <div style={{ display: 'flex', justifyContent: 'center' }}>

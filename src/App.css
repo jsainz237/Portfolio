@@ -3,6 +3,35 @@
   src: url("./assets/fonts/Muri/Muli-Regular.ttf");
 }
 
+@font-face {
+  font-family: 'Muri-xlight';
+  src: url("./assets/fonts/Muri/Muli-ExtraLight.ttf");
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 html, body {
   width: 100%;
   height: 100%;
@@ -20,12 +49,61 @@ html, body {
 #about {
   text-align: center;
   font-family: 'Muri';
-  padding-top: 20px;
-  color: #666666;
+  padding: 40px 0 0 0;
+}
+
+@media screen and (max-height: 420px) {
+  #about {
+    padding: 0 0 0 20px;
+  }
 }
 
 #about h1 {
+  font-size: 50px;
+  padding-bottom: 0;
+  margin: 0;
+  color: #717171;
+}
+
+@media screen and (max-height: 211px) {
+  #about h1 {
+    font-size: 30px;
+  }
+}
+
+#about h3 {
+  margin: 0;
+  padding-top: 10px;
   font-size: 20px;
+  color: #4c4c4c;
+}
+
+@media screen and (max-height: 211px) {
+  #about h3 {
+    padding-top: 5px;
+  }
+}
+
+#about h4 {
+  margin: 0;
+  font-family: 'Muri-xlight';
+  padding-top: 10px;
+  font-size: 17px;
+  color: #4c4c4c;
+}
+
+@media screen and (max-height: 211px) {
+  #about h4 {
+    padding-top: 5px;
+  }
+}
+
+#about .blink {
+  padding: 0 15px;
+  animation: blink 1.5s linear infinite;
+  -moz-animation: blink 1.5s linear infinite;
+  -o-animation: blink 1.5s linear infinite;
+  -webkit-animation: blink 1.5s linear infinite;
 }
 
 .section-container {
@@ -40,6 +118,22 @@ html, body {
           align-items: center;
   height: 100vh;
   width: 100vw;
+}
+
+.section-container #home-content {
+  height: auto;
+  display: block;
+}
+
+@media screen and (max-height: 420px) {
+  .section-container #home-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 #link-container {
@@ -64,23 +158,46 @@ html, body {
 }
 
 .tilt-container {
-  height: 168px;
-  width: 200px;
+  height: 109.2px;
+  width: 130px;
+}
+
+@media screen and (min-height: 211px) {
+  .tilt-container {
+    height: 168px;
+    width: 200px;
+  }
 }
 
 .tilt-container #logo-sqaure {
   position: absolute;
   top: 0;
   left: 0;
-  height: 168px;
-  width: 200px;
+  height: 109.2px;
+  width: 130px;
+}
+
+@media screen and (min-height: 211px) {
+  .tilt-container #logo-sqaure {
+    height: 168px;
+    width: 200px;
+  }
 }
 
 .tilt-container #logo-letters {
   position: absolute;
   top: 8.4px;
   left: 10px;
-  height: 151.2px;
-  width: 180px;
+  height: 92.4px;
+  width: 110px;
+}
+
+@media screen and (min-height: 211px) {
+  .tilt-container #logo-letters {
+    height: 151.2px;
+    width: 180px;
+    top: 8.4px;
+    left: 10px;
+  }
 }
 /*# sourceMappingURL=app.css.map */

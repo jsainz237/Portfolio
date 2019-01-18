@@ -1,6 +1,6 @@
 .link {
-  height: 50px;
-  width: 70px;
+  height: 60px;
+  width: 80px;
   background-color: white;
   margin: 0;
   transform: translateX(-20px);
@@ -14,9 +14,26 @@
   color: black;
 }
 
+@media screen and (max-height: 211px) {
+  .link {
+    height: 40px;
+    width: 60px;
+  }
+}
+
 .link div {
   height: 100%;
   width: 100%;
+}
+
+.link .icon {
+  padding-right: 15px;
+}
+
+@media screen and (max-height: 211px) {
+  .link .icon {
+    padding-right: 5px;
+  }
 }
 
 .link:hover {
