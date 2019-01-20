@@ -10,7 +10,7 @@ var Home = () => (
         <div id='home-content'>
             
             {/* Logo render */}
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <div id='logo'>
                 <Tilt options={{ max: 20, perspective: 1500, reverse: true }} style={{ transformStyle: 'preserve-3d'}}>
                     <div className="tilt-container" style={{ position: 'relative', transformStyle: 'preserve-3d' }}>
                         <img src={logoSqaure} alt="logo-square" id="logo-sqaure"/>
