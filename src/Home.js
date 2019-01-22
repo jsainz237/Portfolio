@@ -6,7 +6,7 @@ import logoSqaure from './assets/images/logo-sqaure.png'
 import logoLetters from './assets/images/logo-letters.png'
 
 var Home = () => (
-    <div className='section-container' style={{ backgroundColor: '#171717'}}>
+    <div className='section-container' style={{ height: '100vh', width: '100vw', backgroundColor: '#171717'}}>
         <div id='home-content'>
             
             {/* Logo render */}

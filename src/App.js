@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Home from './Home'
+import Projects from './Projects/Projects'
 import Links from './LinksFolder/Links'
 import './app.css';
 
@@ -10,6 +11,7 @@ class App extends Component {
       <div id='no-scroll-content'>
         <Links />
         <Home />
+        <Projects />
       </div>
     );
   }
