@@ -29,8 +29,10 @@ html, body {
 }
 
 #no-scroll-content {
-    height: 115vh;   
-    width: 115vw;
+    height: 100vh;   
+    width: 100vw;
+    padding-right: 15px;
+    padding-bottom: 15px;
     overflow-y: scroll;    
  }
 
@@ -99,8 +101,6 @@ $md-grey: #4c4c4c;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
 
     #home-content {
         height: auto;
