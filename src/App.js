@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Home from './Home'
 import Projects from './Projects/Projects'
 import Links from './LinksFolder/Links'
-import './app.css';
+import './App.css';
 
 class App extends Component {
   render() {
