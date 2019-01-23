@@ -31,9 +31,9 @@ html, body {
 #no-scroll-content {
     height: 100vh;   
     width: 100vw;
+    overflow-y: scroll;
     padding-right: 15px;
-    padding-bottom: 15px;
-    overflow-y: scroll;    
+    padding-bottom: 15px;    
  }
 
 
@@ -101,6 +101,8 @@ $md-grey: #4c4c4c;
     display: flex;
     justify-content: center;
     align-items: center;
+    //height: 100vh;
+    //width: 100vw;
 
     #home-content {
         height: auto;

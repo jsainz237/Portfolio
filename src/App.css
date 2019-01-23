@@ -43,9 +43,9 @@ html, body {
 #no-scroll-content {
   height: 100vh;
   width: 100vw;
+  overflow-y: scroll;
   padding-right: 15px;
   padding-bottom: 15px;
-  overflow-y: scroll;
 }
 
 #about {

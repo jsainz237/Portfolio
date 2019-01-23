@@ -8,6 +8,8 @@
   grid-gap: 0;
   height: 400px;
   width: 80vw;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .grid-item {
@@ -17,6 +19,7 @@
   -o-object-fit: contain;
      object-fit: contain;
   position: relative;
+  object-fit: contain;
 }
 
 .item1 {
@@ -25,5 +28,10 @@
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1 / span 2;
+  height: 100%;
+  width: 100%;
+  background: url("../assets/designs/arrow.png");
+  background-size: cover;
+  background-position: center center;
 }
 /*# sourceMappingURL=projects.css.map */

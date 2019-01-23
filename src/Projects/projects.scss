@@ -7,15 +7,22 @@
 
     height: 400px;
     width: 80vw;
+    object-fit: contain;
 }
 
 .grid-item {
     display: flex;
     object-fit: contain;
     position: relative;
+    object-fit: contain;
 }
 
 .item1 {
     grid-column: 1;
     grid-row: 1 / span 2;
+    height: 100%;
+    width: 100%;
+    background: url('../assets/designs/arrow.png');
+    background-size: cover;
+    background-position: center center;
 }
