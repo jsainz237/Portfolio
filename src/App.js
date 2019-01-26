@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
 import Home from './Home'
-import Projects from './Projects/Projects'
+import Projects from './Projects/projects'
 import Links from './LinksFolder/Links'
-import './App.css';
+import './app.css';
 
 class App extends Component {
   render() {

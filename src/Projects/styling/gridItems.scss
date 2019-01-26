@@ -1,0 +1,229 @@
+$lgBreak: 1335px;
+$mdBreak: 1040px;
+$smBreak: 800px;
+$xsmBreak: 500px;
+
+
+.grid-container {
+    display: grid;
+    grid-gap: 0;
+
+    @media screen and (min-width: $lgBreak + 1) {
+        grid-template-columns: 13.3vw 13.3vw 13.3vw 13.3vw 13.3vw 13.3vw ;
+        grid-template-rows: 200px 200px;
+    }
+    
+    @media screen and (max-width: $lgBreak) and (min-width: $mdBreak + 1) {
+        grid-template-columns: 20vw 20vw 20vw 20vw;
+        grid-template-rows: 200px 200px;
+    }
+
+    @media screen and (max-width: $mdBreak) and (min-width: $smBreak + 1) {
+        grid-template-columns: 26vw 26vw 26vw;
+        grid-template-rows: 200px 200px;
+    }
+
+    @media screen and (max-width: $smBreak) and (min-width: $xsmBreak + 1) {
+        grid-template-columns: 40vw 40vw;
+        grid-template-rows: 200px 200px;
+    }
+
+    @media screen and (max-width: $xsmBreak) {
+        grid-template-columns: 80vw;
+        grid-template-rows: 200px 200px;
+    }
+     
+    
+}
+
+@media screen and (min-width: $lgBreak + 1) {
+    #arrow {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+    }
+
+    #SCMusic {
+        grid-column: 3 / span 2;
+        grid-row: 1;
+    }
+
+    #smokinJoes {
+        grid-column: 2 / span 2;
+        grid-row: 2;
+    }
+
+    #krewella {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    #euphoria {
+        grid-column: 4;
+        grid-row: 2;
+    }
+
+    #love {
+        grid-column: 5;
+        grid-row: 1 / span 2;
+    }
+
+    #lonestarOrange {
+        grid-column: 6;
+        grid-row: 1;
+    }
+
+    #healthcareShirt {
+        grid-column: 6;
+        grid-row: 2;
+    }
+}
+
+@media screen and (max-width: $lgBreak) and (min-width: $mdBreak + 1) {
+    #arrow {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+    }
+
+    #SCMusic {
+        grid-column: 3 / span 2;
+        grid-row: 1;
+    }
+
+    #smokinJoes {
+        grid-column: 2 / span 2;
+        grid-row: 2;
+    }
+
+    #krewella {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    #euphoria {
+        grid-column: 4;
+        grid-row: 2;
+    }
+
+    #love {
+        display: none;
+    }
+
+    #lonestarOrange {
+        display: none;
+    }
+
+    #healthcareShirt {
+        display: none;
+    }
+}
+
+@media screen and (max-width: $mdBreak) and (min-width: $smBreak + 1) {
+    #arrow {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+    }
+
+    #SCMusic {
+        grid-column: 2 / span 2;
+        grid-row: 1;
+    }
+
+    #smokinJoes {
+        display: none;
+    }
+
+    #krewella {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    #euphoria {
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    #love {
+        display: none;
+    }
+
+    #lonestarOrange {
+        display: none;
+    }
+
+    #healthcareShirt {
+        display: none;
+    }
+}
+
+@media screen and (max-width: $smBreak) and (min-width: $xsmBreak + 1) {
+    #arrow {
+        display: none;
+    }
+
+    #SCMusic {
+        grid-column: 1 / span 2;
+        grid-row: 1;
+    }
+
+    #smokinJoes {
+        display: none;
+    }
+
+    #krewella {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #euphoria {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    #love {
+        display: none;
+    }
+
+    #lonestarOrange {
+        display: none;
+    }
+
+    #healthcareShirt {
+        display: none;
+    }
+}
+
+@media screen and (max-width: $xsmBreak) {
+    #arrow {
+        display: none;
+    }
+
+    #SCMusic {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #smokinJoes {
+        display: none;
+    }
+
+    #krewella {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #euphoria {
+        display: none;
+    }
+
+    #love {
+        display: none;
+    }
+
+    #lonestarOrange {
+        display: none;
+    }
+
+    #healthcareShirt {
+        display: none;
+    }
+}

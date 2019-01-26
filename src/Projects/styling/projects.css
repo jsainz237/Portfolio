@@ -1,11 +1,15 @@
-.grid-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 20vw 20vw 20vw 20vw;
-      grid-template-columns: 20vw 20vw 20vw 20vw;
-  -ms-grid-rows: 200px 200px;
-      grid-template-rows: 200px 200px;
-  grid-gap: 0;
+.grid-container:hover .grid-item:not(:hover) {
+  z-index: 100;
+}
+
+.grid-container:hover .grid-item:not(:hover) .overlay {
+  opacity: 0.5;
+}
+
+.grid-container:hover .grid-item:not(:hover) img {
+  filter: blur(5px);
+  -ms-filter: blur(5px);
+  -webkit-filter: blur(5px);
 }
 
 .grid-item {
@@ -19,6 +23,8 @@
   height: 100%;
   width: 100%;
   z-index: 200;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .grid-item .overlay {
@@ -28,6 +34,7 @@
   height: 100%;
   width: 100%;
   background-color: black;
+  overflow: hidden;
   opacity: 0;
   transition: all .2s;
   -moz-transition: all .2s;
@@ -44,19 +51,5 @@
   -moz-transition: all .2s;
   -o-transition: all .2s;
   -webkit-transition: all .2s;
-}
-
-.grid-item:hover {
-  z-index: 100;
-}
-
-.grid-item:hover .overlay {
-  opacity: 0.5;
-}
-
-.grid-item:hover img {
-  filter: blur(5px);
-  -ms-filter: blur(5px);
-  -webkit-filter: blur(5px);
 }
 /*# sourceMappingURL=projects.css.map */
