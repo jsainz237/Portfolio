@@ -54,3 +54,20 @@
         -webkit-transition: all .2s;
     }
 }
+
+#designsLink {
+    margin: 35px 0;
+    text-align: center;
+    color: #171717; 
+    cursor: pointer; 
+    text-decoration: none;
+    transition: all .3s ease;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &:visited {
+        color: #171717;
+    }
+}

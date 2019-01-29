@@ -1,0 +1,435 @@
+$lgBreak: 1335px;
+$mdBreak: 1040px;
+$smBreak: 800px;
+$xsmBreak: 500px;
+
+.grid-container-gallery:hover .grid-item-gallery:not(:hover) {
+    z-index: 100;
+
+    .overlay {
+        opacity: 0.5;
+    }
+
+    img {
+        //object-fit: none;
+        filter: blur(5px);
+        -ms-filter: blur(5px);
+        -webkit-filter: blur(5px);
+    }
+}
+
+.grid-container-gallery {
+    display: grid;
+    grid-gap: 0;
+
+    margin: 0;
+    margin: 80px 0;
+
+    @media screen and (min-width: $lgBreak + 1) {
+        grid-template-columns: repeat(6, 13.3vw);
+        grid-template-rows: repeat(4, 200px);
+    }
+    
+    @media screen and (max-width: $lgBreak) and (min-width: $mdBreak + 1) {
+        grid-template-columns: repeat(4, 20vw);
+        grid-template-rows: repeat(6, 200px);
+    }
+
+    @media screen and (max-width: $mdBreak) and (min-width: $smBreak + 1) {
+        grid-template-columns: repeat(3, 26vw);
+        grid-template-rows: repeat(8, 200px);
+    }
+
+    @media screen and (max-width: $smBreak) and (min-width: $xsmBreak + 1) {
+        grid-template-columns: repeat(2, 40vw);
+        grid-template-rows: repeat(12, 200px);
+    }
+
+    @media screen and (max-width: $xsmBreak) {
+        grid-template-columns: 80vw;
+        grid-template-rows: repeat(15, auto);
+    }
+}
+
+.grid-item-gallery {
+    display: flex;
+    object-fit: contain;
+    position: relative;
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    z-index: 200;
+    overflow: hidden;
+    cursor: pointer;
+    // transition: all .2s;
+    // -moz-transition: all .2s;
+    // -o-transition: all .2s;
+    // -webkit-transition: all .2s;
+
+    .overlay {
+        position: absolute;
+        top: 0; left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        overflow: hidden;
+        //box-shadow: inset 10px 10px 10px 10px rgb(0, 0, 0);
+        //filter: blur(10px);
+        opacity: 0;
+        transition: all .2s;
+        -moz-transition: all .2s;
+        -o-transition: all .2s;
+        -webkit-transition: all .2s;
+    }
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        transition: all .2s;
+        -moz-transition: all .2s;
+        -o-transition: all .2s;
+        -webkit-transition: all .2s;
+    }
+}
+
+@media screen and (min-width: $lgBreak + 1) {
+    #arrow-gallery {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+    }
+
+    #SCMusic-gallery {
+        grid-column: 3 / span 2;
+        grid-row: 1;
+    }
+
+    #smokinJoes-gallery {
+        grid-column: 2 / span 2;
+        grid-row: 2;
+    }
+
+    #krewella-gallery {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    #euphoria-gallery {
+        grid-column: 4;
+        grid-row: 2;
+    }
+
+    #love-gallery {
+        grid-column: 5;
+        grid-row: 1 / span 2;
+    }
+
+    #lonestarOrange-gallery {
+        grid-column: 6;
+        grid-row: 1;
+    }
+
+    #healthcareShirt-gallery {
+        grid-column: 6;
+        grid-row: 2;
+    }
+
+    #mustangMagazine-gallery {
+        grid-column: 1 / span 2;
+        grid-row: 3;
+    }
+
+    #riley-gallery {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    #command-gallery {
+        grid-column: 4 / span 2;
+        grid-row: 3;
+    }
+
+    #catHat-gallery {
+        display: none;
+    }
+
+    #jakku-gallery {
+        grid-column: 6;
+        grid-row: 3 / span 2;
+    }
+
+    #resistance-gallery {
+        grid-column: 3;
+        grid-row: 3 / span 2;
+    }
+
+    #xgames-gallery {
+        grid-column: 4 / span 2;
+        grid-row: 4;
+    }
+
+    #lonestar-gallery {
+        grid-column: 2;
+        grid-row: 4;
+    }
+}
+
+@media screen and (max-width: $lgBreak) and (min-width: $mdBreak + 1) {
+    #arrow-gallery {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+    }
+
+    #SCMusic-gallery {
+        grid-column: 3 / span 2;
+        grid-row: 1;
+    }
+
+    #smokinJoes-gallery {
+        grid-column: 2 / span 2;
+        grid-row: 2;
+    }
+
+    #krewella-gallery {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    #euphoria-gallery {
+        grid-column: 4;
+        grid-row: 2;
+    }
+
+    #love-gallery {
+        grid-column: 3;
+        grid-row: 3 / span 2;
+    }
+
+    #lonestarOrange-gallery {
+        grid-column: 2;
+        grid-row: 4;
+    }
+
+    #healthcareShirt-gallery {
+        grid-column: 4;
+        grid-row: 3;
+    }
+
+    #mustangMagazine-gallery {
+        grid-column: 1 / span 2;
+        grid-row: 3;
+    }
+
+    #riley-gallery {
+        grid-column: 1;
+        grid-row: 4;
+    }
+
+    #command-gallery {
+        grid-column: 2 / span 2;
+        grid-row: 5;
+    }
+
+    #catHat-gallery {
+        display: none;
+    }
+
+    #jakku-gallery {
+        grid-column: 4;
+        grid-row: 5 / span 2;
+    }
+
+    #resistance-gallery {
+        grid-column: 1;
+        grid-row: 5 / span 2;
+    }
+
+    #xgames-gallery {
+        grid-column: 2 / span 2;
+        grid-row: 6;
+    }
+
+    #lonestar-gallery {
+        grid-column: 4;
+        grid-row: 4;
+    }
+}
+
+@media screen and (max-width: $mdBreak) and (min-width: $smBreak + 1) {
+    #arrow-gallery {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+    }
+
+    #SCMusic-gallery {
+        grid-column: 2 / span 2;
+        grid-row: 1;
+    }
+
+    #smokinJoes-gallery {
+        grid-column: 1 / span 2;
+        grid-row: 3;
+    }
+
+    #krewella-gallery {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    #euphoria-gallery{
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    #love-gallery {
+        grid-column: 2;
+        grid-row: 5 / span 2;
+    }
+
+    #lonestarOrange-gallery {
+        grid-column: 3;
+        grid-row: 3;
+    }
+
+    #healthcareShirt-gallery {
+        grid-column: 1;
+        grid-row: 6;
+    }
+
+    #mustangMagazine-gallery {
+        grid-column: 1 / span 2;
+        grid-row: 4;
+    }
+
+    #riley-gallery {
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    #command-gallery {
+        grid-column: 1 / span 2;
+        grid-row: 7;
+    }
+
+    #catHat-gallery {
+        display: none;
+    }
+
+    #jakku-gallery {
+        grid-column: 3;
+        grid-row: 6 / span 2;
+    }
+
+    #resistance-gallery {
+        grid-column: 3;
+        grid-row: 4 / span 2;
+    }
+
+    #xgames-gallery {
+        grid-column: 1 / span 2;
+        grid-row: 8;
+    }
+
+    #lonestar-gallery {
+        grid-column: 3;
+        grid-row: 8;
+    }
+}
+
+@media screen and (max-width: $smBreak) and (min-width: $xsmBreak + 1) {
+    #arrow-gallery {
+        grid-column: 1;
+        grid-row: 3 / span 2;
+    }
+
+    #SCMusic-gallery {
+        grid-column: 1 / span 2;
+        grid-row: 1;
+    }
+
+    #smokinJoes-gallery {
+        grid-column: 1 / span 2;
+        grid-row: 7;
+    }
+
+    #krewella-gallery {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    #euphoria-gallery {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    #love-gallery {
+        grid-column: 2;
+        grid-row: 3 / span 2;
+    }
+
+    #lonestarOrange-gallery {
+        grid-column: 1;
+        grid-row: 6;
+    }
+
+    #healthcareShirt-gallery {
+        grid-column: 1;
+        grid-row: 0;
+    }
+
+    #mustangMagazine-gallery {
+        grid-column: 1 / span 2;
+        grid-row: 8;
+    }
+
+    #riley-gallery {
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    #command-gallery {
+        grid-column: 1 / span 2;
+        grid-row: 11;
+    }
+
+    #catHat {
+        display: none;
+    }
+
+    #jakku-gallery {
+        grid-column: 2;
+        grid-row: 9 / span 2;
+    }
+
+    #resistance-gallery {
+        grid-column: 2;
+        grid-row: 5 / span 2;
+    }
+
+    #xgames-gallery {
+        grid-column: 1 / span 2;
+        grid-row: 12;
+    }
+
+    #lonestar-gallery {
+        grid-column: 1;
+        grid-row: 10;
+    }
+}
+
+@media screen and (max-width: $xsmBreak) {
+
+    #SCMusic-gallery {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+
+    #resistance-gallery {
+        grid-row: 11;
+    }
+
+    #xgames-gallery {
+        grid-row: 13;
+    }
+}

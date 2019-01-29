@@ -52,4 +52,22 @@
   -o-transition: all .2s;
   -webkit-transition: all .2s;
 }
+
+#designsLink {
+  margin: 35px 0;
+  text-align: center;
+  color: #171717;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+#designsLink:hover {
+  text-decoration: underline;
+}
+
+#designsLink:visited {
+  color: #171717;
+}
 /*# sourceMappingURL=projects.css.map */
