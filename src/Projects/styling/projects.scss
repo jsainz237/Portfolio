@@ -71,3 +71,11 @@
         color: #171717;
     }
 }
+
+.arrowContainer {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

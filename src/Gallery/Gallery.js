@@ -1,24 +1,8 @@
 import React from 'react';
 import './gallery.css'
 
-import arrow from '../assets/designs/arrow.png'
-import scMusic from '../assets/designs/scMusic.jpg'
-import smokinJoes from '../assets/designs/smokinJoes.png'
-import krewella from '../assets/designs/krewella.png'
-import euphoria from '../assets/designs/euphoria.png'
-//import tenorSquare from '../assets/designs/tenorSquare.jpg'
-import resistance from '../assets/designs/resistance.png'
-import riley from '../assets/designs/riley.png'
-import lonestarOrange from '../assets/designs/lonestarOrange.jpg'
-import healthcareShirt from '../assets/designs/healthcareShirt.png'
-import love from '../assets/designs/love.jpg'
-import mustangMagazine from '../assets/designs/mustang.jpg'
-import command from '../assets/designs/command.png'
-import catHat from '../assets/designs/catHat.png'
-import jakku from '../assets/designs/jakku.png'
-import lonestar from '../assets/designs/lonestar.png'
-//import poof from '../assets/designs/poof.png'
-import xgames from '../assets/designs/xgames.jpg'
+import { imgObjects } from '../utils/images'
+import ImgView from '../Projects/ImgView'
 
 let containerStyle = {
     minHeight: '100vh',
@@ -30,73 +14,59 @@ let containerStyle = {
     justifyContent: 'center'
 }
 
-const Gallery = () => (
-    <div style={containerStyle}>
-        <div>
-            <div className='grid-container-gallery'>
-                <div className="grid-item-gallery" id='arrow-gallery' >
-                    <img src={arrow} alt="arrow" />
-                    <div className="overlay" />
-                </div>
-                <div className="grid-item-gallery" id='SCMusic-gallery' >
-                    <img src={scMusic} alt="SCMusic" />
-                    <div className="overlay" />
-                </div>
-                <div className="grid-item-gallery" id='smokinJoes-gallery' >
-                    <img src={smokinJoes} alt="smokingJoes" />
-                    <div className="overlay" />
-                </div>
-                <div className="grid-item-gallery" id='krewella-gallery' >
-                    <img src={krewella} alt="krewella" style={{ width: '101%' }}/>
-                    <div className="overlay" />
-                </div>
-                <div className="grid-item-gallery" id='euphoria-gallery' >
-                    <img src={euphoria} alt="euphoria" />
-                    <div className="overlay" />
-                </div>
-                <div className="grid-item-gallery" id='love-gallery' >
-                    <img src={love} alt="love" />
-                    <div className="overlay" />
-                </div>
-                <div className="grid-item-gallery" id='lonestarOrange-gallery' >
-                    <img src={lonestarOrange} alt="lonestarOrange" />
-                    <div className="overlay" />
-                </div>
-                <div className="grid-item-gallery" id='healthcareShirt-gallery' >
-                    <img src={healthcareShirt} alt="healthcareShirt" />
-                    <div className="overlay" />
-                </div>
-                <div className="grid-item-gallery" id='mustangMagazine-gallery' >
-                    <img src={mustangMagazine} alt="mustangMagazine" />
-                    <div className="overlay" />
-                </div>
-                <div className="grid-item-gallery" id='riley-gallery' >
-                    <img src={riley} alt="riley" />
-                    <div className="overlay" />
-                </div>
-                <div className="grid-item-gallery" id='command-gallery' >
-                    <img src={command} alt="command" />
-                    <div className="overlay" />
-                </div>
-                <div className="grid-item-gallery" id='jakku-gallery' >
-                    <img src={jakku} alt="jakku" />
-                    <div className="overlay" />
-                </div>
-                <div className="grid-item-gallery" id='lonestar-gallery' >
-                    <img src={lonestar} alt="lonestar" />
-                    <div className="overlay" />
-                </div>
-                <div className="grid-item-gallery" id='xgames-gallery' >
-                    <img src={xgames} alt="xgames" />
-                    <div className="overlay" />
-                </div>
-                <div className="grid-item-gallery" id='resistance-gallery' >
-                    <img src={resistance} alt="resistance" />
-                    <div className="overlay" />
-                </div>
-            </div>
-        </div>
+const GridItem = (props) => (
+    <div className='grid-item-gallery' id={props.id} onClick={e => props.showImg(props.src)}>
+        <img src={props.src} alt={props.id} />
+        <div className="overlay" />
     </div>
 )
+
+class Gallery extends React.Component {
+    constructor() {
+        super();
+
+        this.state = {
+            imgIndex: null,
+        }
+    }
+
+    showImg(imgIndex){
+        this.setState({ imgIndex })
+    }
+
+    render() {
+        return (
+            <div style={containerStyle} id="gallery">
+                { this.state.imgIndex || this.state.imgIndex === 0 ? <ImgView showImg={this.showImg.bind(this)} index={this.state.imgIndex}/> : null }
+                <div className='wrapper'>
+                    <h1 style={{ textAlign: 'center', color: '#717171', margin: 0 }}>
+                        <span className='blink'>[</span>Graphic Design Creations<span className='blink'>]</span>
+                    </h1>
+                    <h3 style={{ textAlign: 'center', color: '#4c4c4c', margin: 0, paddingTop: 10 }}>
+                        This is most of the artwork I've created over the past 7 years
+                    </h3>
+                    <div className='grid-container-gallery'>
+                        <GridItem src={imgObjects.arrow.url} id="arrow-gallery" showImg={this.showImg.bind(this, imgObjects.arrow.index)} />
+                        <GridItem src={imgObjects.scMusic.url} id="SCMusic-gallery" showImg={this.showImg.bind(this, imgObjects.scMusic.index)} />
+                        <GridItem src={imgObjects.smokinJoes.url} id="smokinJoes-gallery" showImg={this.showImg.bind(this, imgObjects.smokinJoes.index)} />
+                        <GridItem src={imgObjects.krewella.url} id="krewella-gallery" showImg={this.showImg.bind(this, imgObjects.krewella.index)} style={{ width: '101%' }}/>
+                        <GridItem src={imgObjects.euphoria.url} id="euphoria-gallery" showImg={this.showImg.bind(this, imgObjects.euphoria.index)} />
+                        <GridItem src={imgObjects.love.url} id="love-gallery" showImg={this.showImg.bind(this, imgObjects.love.index)} />
+                        <GridItem src={imgObjects.lonestarOrange.url} id="lonestarOrange-gallery" showImg={this.showImg.bind(this, imgObjects.lonestarOrange.index)} />
+                        <GridItem src={imgObjects.healthcareShirt.url} id="healthcareShirt-gallery" showImg={this.showImg.bind(this, imgObjects.healthcareShirt.index)} />
+                        <GridItem src={imgObjects.mustangMagazine.url} id="mustangMagazine-gallery" showImg={this.showImg.bind(this, imgObjects.mustangMagazine.index)} />
+                        <GridItem src={imgObjects.riley.url} id="riley-gallery" showImg={this.showImg.bind(this, imgObjects.riley.index)} />
+                        <GridItem src={imgObjects.command.url} id="command-gallery" showImg={this.showImg.bind(this, imgObjects.command.index)} />
+                        <GridItem src={imgObjects.jakku.url} id="jakku-gallery" showImg={this.showImg.bind(this, imgObjects.jakku.index)} />
+                        <GridItem src={imgObjects.lonestar.url} id="lonestar-gallery" showImg={this.showImg.bind(this, imgObjects.lonestar.index)} />
+                        <GridItem src={imgObjects.xgames.url} id="xgames-gallery" showImg={this.showImg.bind(this, imgObjects.xgames.index)} />
+                        <GridItem src={imgObjects.resistance.url} id="resistance-gallery" showImg={this.showImg.bind(this, imgObjects.resistance.index)} />
+                    </div>
+                </div>
+            </div>
+        )
+    }
+    
+}
 
 export default Gallery

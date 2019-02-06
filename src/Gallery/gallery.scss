@@ -3,6 +3,44 @@ $mdBreak: 1040px;
 $smBreak: 800px;
 $xsmBreak: 500px;
 
+@font-face {
+    font-family: 'Muri';
+    src: url('../assets/fonts/Muri/Muli-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Muri-xlight';
+    src: url('../assets/fonts/Muri/Muli-ExtraLight.ttf');
+}
+
+#gallery {
+    .wrapper {
+        margin: 50px 0 0 0;
+        max-width: 80vw;
+
+        @media screen and (max-width: 839px) {
+            margin: 80px 0 0 0;
+        }
+    }
+
+    h1 { font-size: 45px; font-family: 'Muri'; }
+    h3 { font-size: 20px; font-family: 'Muri-xlight'; }
+
+    @media screen and (max-width: 754px) and (min-width: 521px) {
+        h1 { font-size: 30px; }
+        h3 { font-size: 18px; }
+    }
+
+    @media screen and (max-width: 520px) and (min-width: 348px) {
+        h1 { font-size: 20px; }
+        h3 { font-size: 15px; }
+    }
+    @media screen and (max-width: 347px) {
+        h1 { font-size: 18px; }
+        h3 { font-size: 15px; }
+    }
+}
+
 .grid-container-gallery:hover .grid-item-gallery:not(:hover) {
     z-index: 100;
 
@@ -23,7 +61,7 @@ $xsmBreak: 500px;
     grid-gap: 0;
 
     margin: 0;
-    margin: 80px 0;
+    margin: 50px 0 80px 0;
 
     @media screen and (min-width: $lgBreak + 1) {
         grid-template-columns: repeat(6, 13.3vw);

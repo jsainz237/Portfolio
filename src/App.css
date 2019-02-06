@@ -111,7 +111,7 @@ html, body {
   }
 }
 
-#about .blink {
+.blink {
   padding: 0 15px;
   animation: blink 1.5s linear infinite;
   -moz-animation: blink 1.5s linear infinite;
@@ -120,7 +120,7 @@ html, body {
 }
 
 @media screen and (max-width: 465px) {
-  #about .blink {
+  .blink {
     padding: 0 10px;
   }
 }

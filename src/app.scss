@@ -85,17 +85,17 @@ $md-grey: #4c4c4c;
         font-size: 17px;
         color: $md-grey;
     }
+}
 
-    .blink {
-        @media screen and (max-width: 465px) {
-            padding: 0 10px;
-        }
-        padding: 0 15px;
-        animation: blink 1.5s linear infinite;
-        -moz-animation: blink 1.5s linear infinite;
-        -o-animation: blink 1.5s linear infinite;
-        -webkit-animation: blink 1.5s linear infinite;
+.blink {
+    @media screen and (max-width: 465px) {
+        padding: 0 10px;
     }
+    padding: 0 15px;
+    animation: blink 1.5s linear infinite;
+    -moz-animation: blink 1.5s linear infinite;
+    -o-animation: blink 1.5s linear infinite;
+    -webkit-animation: blink 1.5s linear infinite;
 }
 
 .section-container {
