@@ -5,17 +5,17 @@ $xsmBreak: 500px;
 
 @font-face {
     font-family: 'Muri';
-    src: url('../assets/fonts/Muri/Muli-Regular.ttf');
+    src: url('../../../assets/fonts/Muri/Muli-Regular.ttf');
 }
 
 @font-face {
     font-family: 'Muri-xlight';
-    src: url('../assets/fonts/Muri/Muli-ExtraLight.ttf');
+    src: url('../../../assets/fonts/Muri/Muli-ExtraLight.ttf');
 }
 
 #gallery {
     .wrapper {
-        margin: 50px 0 0 0;
+        margin: 40px 0 0 0;
         max-width: 80vw;
 
         @media screen and (max-width: 839px) {
@@ -41,7 +41,7 @@ $xsmBreak: 500px;
     }
 }
 
-.grid-container-gallery:hover .grid-item-gallery:not(:hover) {
+.grid-container-large:hover .grid-item-large:not(:hover) {
     z-index: 100;
 
     .overlay {
@@ -56,12 +56,12 @@ $xsmBreak: 500px;
     }
 }
 
-.grid-container-gallery {
+.grid-container-large {
     display: grid;
-    grid-gap: 0;
+    grid-gap: 1;
 
-    margin: 0;
-    margin: 50px 0 80px 0;
+    //margin: 0;
+    margin-top: 40px;
 
     @media screen and (min-width: $lgBreak + 1) {
         grid-template-columns: repeat(6, 13.3vw);
@@ -89,7 +89,7 @@ $xsmBreak: 500px;
     }
 }
 
-.grid-item-gallery {
+.grid-item-large {
     display: flex;
     object-fit: contain;
     position: relative;
@@ -132,300 +132,300 @@ $xsmBreak: 500px;
 }
 
 @media screen and (min-width: $lgBreak + 1) {
-    #arrow-gallery {
+    #arrow-large {
         grid-column: 1;
         grid-row: 1 / span 2;
     }
 
-    #SCMusic-gallery {
+    #SCMusic-large {
         grid-column: 3 / span 2;
         grid-row: 1;
     }
 
-    #smokinJoes-gallery {
+    #smokinJoes-large {
         grid-column: 2 / span 2;
         grid-row: 2;
     }
 
-    #krewella-gallery {
+    #krewella-large {
         grid-column: 2;
         grid-row: 1;
     }
 
-    #euphoria-gallery {
+    #euphoria-large {
         grid-column: 4;
         grid-row: 2;
     }
 
-    #love-gallery {
+    #love-large {
         grid-column: 5;
         grid-row: 1 / span 2;
     }
 
-    #lonestarOrange-gallery {
+    #lonestarOrange-large {
         grid-column: 6;
         grid-row: 1;
     }
 
-    #healthcareShirt-gallery {
+    #healthcareShirt-large {
         grid-column: 6;
         grid-row: 2;
     }
 
-    #mustangMagazine-gallery {
+    #mustangMagazine-large {
         grid-column: 1 / span 2;
         grid-row: 3;
     }
 
-    #riley-gallery {
+    #riley-large {
         grid-column: 1;
         grid-row: 4;
     }
 
-    #command-gallery {
+    #command-large {
         grid-column: 4 / span 2;
         grid-row: 3;
     }
 
-    #catHat-gallery {
+    #catHat-large {
         display: none;
     }
 
-    #jakku-gallery {
+    #jakku-large {
         grid-column: 6;
         grid-row: 3 / span 2;
     }
 
-    #resistance-gallery {
+    #resistance-large {
         grid-column: 3;
         grid-row: 3 / span 2;
     }
 
-    #xgames-gallery {
+    #xgames-large {
         grid-column: 4 / span 2;
         grid-row: 4;
     }
 
-    #lonestar-gallery {
+    #lonestar-large {
         grid-column: 2;
         grid-row: 4;
     }
 }
 
 @media screen and (max-width: $lgBreak) and (min-width: $mdBreak + 1) {
-    #arrow-gallery {
+    #arrow-large {
         grid-column: 1;
         grid-row: 1 / span 2;
     }
 
-    #SCMusic-gallery {
+    #SCMusic-large {
         grid-column: 3 / span 2;
         grid-row: 1;
     }
 
-    #smokinJoes-gallery {
+    #smokinJoes-large {
         grid-column: 2 / span 2;
         grid-row: 2;
     }
 
-    #krewella-gallery {
+    #krewella-large {
         grid-column: 2;
         grid-row: 1;
     }
 
-    #euphoria-gallery {
+    #euphoria-large {
         grid-column: 4;
         grid-row: 2;
     }
 
-    #love-gallery {
+    #love-large {
         grid-column: 3;
         grid-row: 3 / span 2;
     }
 
-    #lonestarOrange-gallery {
+    #lonestarOrange-large {
         grid-column: 2;
         grid-row: 4;
     }
 
-    #healthcareShirt-gallery {
+    #healthcareShirt-large {
         grid-column: 4;
         grid-row: 3;
     }
 
-    #mustangMagazine-gallery {
+    #mustangMagazine-large {
         grid-column: 1 / span 2;
         grid-row: 3;
     }
 
-    #riley-gallery {
+    #riley-large {
         grid-column: 1;
         grid-row: 4;
     }
 
-    #command-gallery {
+    #command-large {
         grid-column: 2 / span 2;
         grid-row: 5;
     }
 
-    #catHat-gallery {
+    #catHat-large {
         display: none;
     }
 
-    #jakku-gallery {
+    #jakku-large {
         grid-column: 4;
         grid-row: 5 / span 2;
     }
 
-    #resistance-gallery {
+    #resistance-large {
         grid-column: 1;
         grid-row: 5 / span 2;
     }
 
-    #xgames-gallery {
+    #xgames-large {
         grid-column: 2 / span 2;
         grid-row: 6;
     }
 
-    #lonestar-gallery {
+    #lonestar-large {
         grid-column: 4;
         grid-row: 4;
     }
 }
 
 @media screen and (max-width: $mdBreak) and (min-width: $smBreak + 1) {
-    #arrow-gallery {
+    #arrow-large {
         grid-column: 1;
         grid-row: 1 / span 2;
     }
 
-    #SCMusic-gallery {
+    #SCMusic-large {
         grid-column: 2 / span 2;
         grid-row: 1;
     }
 
-    #smokinJoes-gallery {
+    #smokinJoes-large {
         grid-column: 1 / span 2;
         grid-row: 3;
     }
 
-    #krewella-gallery {
+    #krewella-large {
         grid-column: 2;
         grid-row: 2;
     }
 
-    #euphoria-gallery{
+    #euphoria-large{
         grid-column: 3;
         grid-row: 2;
     }
 
-    #love-gallery {
+    #love-large {
         grid-column: 2;
         grid-row: 5 / span 2;
     }
 
-    #lonestarOrange-gallery {
+    #lonestarOrange-large {
         grid-column: 3;
         grid-row: 3;
     }
 
-    #healthcareShirt-gallery {
+    #healthcareShirt-large {
         grid-column: 1;
         grid-row: 6;
     }
 
-    #mustangMagazine-gallery {
+    #mustangMagazine-large {
         grid-column: 1 / span 2;
         grid-row: 4;
     }
 
-    #riley-gallery {
+    #riley-large {
         grid-column: 1;
         grid-row: 5;
     }
 
-    #command-gallery {
+    #command-large {
         grid-column: 1 / span 2;
         grid-row: 7;
     }
 
-    #catHat-gallery {
+    #catHat-large {
         display: none;
     }
 
-    #jakku-gallery {
+    #jakku-large {
         grid-column: 3;
         grid-row: 6 / span 2;
     }
 
-    #resistance-gallery {
+    #resistance-large {
         grid-column: 3;
         grid-row: 4 / span 2;
     }
 
-    #xgames-gallery {
+    #xgames-large {
         grid-column: 1 / span 2;
         grid-row: 8;
     }
 
-    #lonestar-gallery {
+    #lonestar-large {
         grid-column: 3;
         grid-row: 8;
     }
 }
 
 @media screen and (max-width: $smBreak) and (min-width: $xsmBreak + 1) {
-    #arrow-gallery {
+    #arrow-large {
         grid-column: 1;
         grid-row: 3 / span 2;
     }
 
-    #SCMusic-gallery {
+    #SCMusic-large {
         grid-column: 1 / span 2;
         grid-row: 1;
     }
 
-    #smokinJoes-gallery {
+    #smokinJoes-large {
         grid-column: 1 / span 2;
         grid-row: 7;
     }
 
-    #krewella-gallery {
+    #krewella-large {
         grid-column: 1;
         grid-row: 2;
     }
 
-    #euphoria-gallery {
+    #euphoria-large {
         grid-column: 2;
         grid-row: 2;
     }
 
-    #love-gallery {
+    #love-large {
         grid-column: 2;
         grid-row: 3 / span 2;
     }
 
-    #lonestarOrange-gallery {
+    #lonestarOrange-large {
         grid-column: 1;
         grid-row: 6;
     }
 
-    #healthcareShirt-gallery {
+    #healthcareShirt-large {
         grid-column: 1;
         grid-row: 0;
     }
 
-    #mustangMagazine-gallery {
+    #mustangMagazine-large {
         grid-column: 1 / span 2;
         grid-row: 8;
     }
 
-    #riley-gallery {
+    #riley-large {
         grid-column: 1;
         grid-row: 5;
     }
 
-    #command-gallery {
+    #command-large {
         grid-column: 1 / span 2;
         grid-row: 11;
     }
@@ -434,22 +434,22 @@ $xsmBreak: 500px;
         display: none;
     }
 
-    #jakku-gallery {
+    #jakku-large {
         grid-column: 2;
         grid-row: 9 / span 2;
     }
 
-    #resistance-gallery {
+    #resistance-large {
         grid-column: 2;
         grid-row: 5 / span 2;
     }
 
-    #xgames-gallery {
+    #xgames-large {
         grid-column: 1 / span 2;
         grid-row: 12;
     }
 
-    #lonestar-gallery {
+    #lonestar-large {
         grid-column: 1;
         grid-row: 10;
     }
@@ -457,17 +457,17 @@ $xsmBreak: 500px;
 
 @media screen and (max-width: $xsmBreak) {
 
-    #SCMusic-gallery {
+    #SCMusic-large {
         grid-column: 1;
         grid-row: 1;
     }
 
 
-    #resistance-gallery {
+    #resistance-large {
         grid-row: 11;
     }
 
-    #xgames-gallery {
+    #xgames-large {
         grid-row: 13;
     }
 }

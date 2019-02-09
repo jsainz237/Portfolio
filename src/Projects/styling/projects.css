@@ -87,4 +87,14 @@
       -ms-flex-align: center;
           align-items: center;
 }
+
+.GalleryButton {
+  margin: 20px 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.GalleryButton:hover {
+  text-decoration: underline;
+}
 /*# sourceMappingURL=projects.css.map */

@@ -1,0 +1,111 @@
+.skills-header {
+  margin: 0;
+  text-align: center;
+  padding: 5px 20px;
+  font-size: 20px;
+  margin-top: 20px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#skill-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80vw;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0;
+}
+
+@media screen and (min-width: 1410px) {
+  #skill-wrapper {
+    width: 60vw;
+  }
+}
+
+#skill-wrapper:hover .skill:not(:hover) {
+  opacity: 0.2;
+}
+
+.skill {
+  padding: 40px;
+  font-size: 35px;
+  margin: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-align: center;
+  cursor: default;
+}
+
+@media screen and (max-width: 424px) {
+  .skill {
+    padding: 20px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 976px) and (min-width: 874px) {
+  .skill {
+    padding: 35px;
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 873px) and (min-width: 571px) {
+  .skill {
+    padding: 30px;
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 570px) and (min-width: 425px) {
+  .skill {
+    padding: 20px;
+    font-size: 25px;
+  }
+}
+
+.skill#JS:hover {
+  color: #323330;
+}
+
+.skill#HTML:hover {
+  color: white;
+}
+
+.skill#CSS:hover {
+  color: white;
+}
+
+.skill#SCSS:hover {
+  color: white;
+}
+
+.skill#BootStrap:hover {
+  color: white;
+}
+
+.skill#React:hover {
+  color: #61dafb;
+}
+
+.skill#ReactNative:hover {
+  color: white;
+}
+
+.skill#C:hover {
+  color: #1a75b3;
+}
+
+.skill#CPP:hover {
+  color: white;
+}
+
+.skill#RR:hover {
+  color: white;
+}
+/*# sourceMappingURL=Skills.css.map */

@@ -79,3 +79,13 @@
     justify-content: center;
     align-items: center;
 }
+
+.GalleryButton {
+    margin: 20px 0;
+    font-size: 20px;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
