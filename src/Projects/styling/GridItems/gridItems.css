@@ -1,4 +1,4 @@
-.grid-container {
+.grid-container, .grid-container-mobile {
   display: -ms-grid;
   display: grid;
   grid-gap: 0;
@@ -6,7 +6,7 @@
 }
 
 @media screen and (min-width: 1336px) {
-  .grid-container {
+  .grid-container, .grid-container-mobile {
     -ms-grid-columns: 13.3vw 13.3vw 13.3vw 13.3vw 13.3vw 13.3vw;
         grid-template-columns: 13.3vw 13.3vw 13.3vw 13.3vw 13.3vw 13.3vw;
     -ms-grid-rows: 200px 200px;
@@ -15,7 +15,7 @@
 }
 
 @media screen and (max-width: 1335px) and (min-width: 1041px) {
-  .grid-container {
+  .grid-container, .grid-container-mobile {
     -ms-grid-columns: 20vw 20vw 20vw 20vw;
         grid-template-columns: 20vw 20vw 20vw 20vw;
     -ms-grid-rows: 200px 200px;
@@ -24,7 +24,7 @@
 }
 
 @media screen and (max-width: 1040px) and (min-width: 801px) {
-  .grid-container {
+  .grid-container, .grid-container-mobile {
     -ms-grid-columns: 26vw 26vw 26vw;
         grid-template-columns: 26vw 26vw 26vw;
     -ms-grid-rows: 200px 200px;
@@ -33,7 +33,7 @@
 }
 
 @media screen and (max-width: 800px) and (min-width: 501px) {
-  .grid-container {
+  .grid-container, .grid-container-mobile {
     -ms-grid-columns: 40vw 40vw;
         grid-template-columns: 40vw 40vw;
     -ms-grid-rows: 200px 200px;
@@ -42,7 +42,7 @@
 }
 
 @media screen and (max-width: 500px) {
-  .grid-container {
+  .grid-container, .grid-container-mobile {
     -ms-grid-columns: 80vw;
         grid-template-columns: 80vw;
     -ms-grid-rows: 200px 200px;

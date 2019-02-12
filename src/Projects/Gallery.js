@@ -1,5 +1,6 @@
 import React from 'react';
 import { imgObjects } from '../utils/images'
+import { isMobile } from 'react-device-detect'
 
 import './styling/GridItems/gridItems.css'
 import './styling/GridItems/gallery.css'
@@ -19,7 +20,7 @@ const SmallGridItem = (props) => (
 )
 
 const LargeGallery = (props) => (
-    <div className='grid-container-large'>
+    <div className={isMobile ? 'grid-container-large-mobile' : 'grid-container-large'}>
         <LargeGridItem src={imgObjects.arrow} id="arrow-large" showImg={props.showImg} />
         <LargeGridItem src={imgObjects.scMusic} id="SCMusic-large" showImg={props.showImg} />
         <LargeGridItem src={imgObjects.smokinJoes} id="smokinJoes-large" showImg={props.showImg} />
@@ -40,7 +41,7 @@ const LargeGallery = (props) => (
 )
 
 const SmallGallery = (props) => (
-    <div className='grid-container'>
+    <div className={isMobile ? 'grid-container-mobile' : 'grid-container'}>
         <SmallGridItem id="arrow" src={imgObjects.arrow} showImg={props.showImg} />
         <SmallGridItem id="SCMusic" src={imgObjects.scMusic} showImg={props.showImg} />
         <SmallGridItem id="smokinJoes" src={imgObjects.smokinJoes} showImg={props.showImg} />

@@ -26,20 +26,30 @@ html, body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    background-color: #717171;
 }
+
+// body {
+//     -webkit-overflow-scrolling: touch;
+// }
 
 #no-scroll-content {
     height: 100vh;   
     width: 100vw;
     overflow-y: scroll;
     padding-right: 15px;
-    padding-bottom: 15px;    
+    padding-bottom: 15px;
+    //-webkit-overflow-scrolling: touch;  
+    &.scroll-lock {
+        overflow: hidden;
+    }  
  }
 
 
 $light-grey: #717171;
 $md-grey: #4c4c4c;
-#about {
+.main-content-wrapper {
     //padding-top: 100px;
     text-align: center;
     //font-family: 'Muri';
@@ -53,13 +63,13 @@ $md-grey: #4c4c4c;
 
     h1 {
         @media screen and (max-width: 585px) and (min-width: 368px) {
-            font-size: 30px
+            font-size: 23px
         }
         @media screen and (max-width: 367px) {
-            font-size: 25px;
+            font-size: 20px;
         }
 
-        font-size: 50px;
+        font-size: 40px;
         padding-bottom: 0;
         margin: 0;
         color: $light-grey;
@@ -105,6 +115,7 @@ $md-grey: #4c4c4c;
     //height: 100vh;
     //width: 100vw;
     font-family: 'Muri';
+    //-webkit-overflow-scrolling: touch;
 
     #home-content {
         height: auto;
@@ -120,7 +131,7 @@ $md-grey: #4c4c4c;
         margin-left: 22px;
     }
     z-index: 500;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
@@ -151,6 +162,7 @@ $logo-size-lg: 200px;
     }
 
     #logo-letters {
+        z-index: 100;
         position: absolute;
         height: (.84) * ($logo-size-lg - 20px);
         width: 200px - 20px;
