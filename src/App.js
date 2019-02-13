@@ -11,9 +11,19 @@ import './app.css';
 import { isMobile } from 'react-device-detect';
 
 class App extends Component {
+  
+  componentDidMount() {
+    if(!isMobile) {
+      document.getElementById('html').style.setProperty("overflow", "hidden");
+      document.getElementById('html').style.setProperty("-webkit-overflow-scrolling", "touch");
+      document.getElementById('body').style.setProperty("overflow", "hidden");
+      document.getElementById('body').style.setProperty("-webkit-overflow-scrolling", "touch");
+    }
+  }
+  
   render() {
     return (
-      <div id='no-scroll-content'>
+      <div id='app' className={ isMobile ? null : 'no-scroll-content'}>
         <Links />
         {/* <Main />
         <Main /> */}

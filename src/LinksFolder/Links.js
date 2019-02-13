@@ -21,7 +21,7 @@ var Links = () => (
             </div>
         </a>
 
-        <a className="link" href='https://drive.google.com/file/d/14N-n8XnGk1P1M3I6ZtRZcqg2eJj28bGv/view?usp=sharing' target='_blank' rel="noopener noreferrer">
+        <a className="link" href='https://drive.google.com/file/d/1yMpe4X1XLzJ_ECZIaOg85KO-sYqGaQ6i/view?usp=sharing' target='_blank' rel="noopener noreferrer">
             <div style={{ backgroundColor: '#2b5797', display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
                 <FileIcon className='icon' />
             </div>

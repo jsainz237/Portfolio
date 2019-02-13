@@ -1,10 +1,11 @@
 import React from 'react'
 //import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
+import { isMobile } from 'react-device-detect'
 
 import { imgArr } from '../utils/images'
 
 let backdropStyle = {
-    position: 'absolute',
+    position: 'fixed',
     top: 0, left: 0,
     height: '100vh', width: '100vw',
     backgroundColor: 'black',
@@ -13,19 +14,33 @@ let backdropStyle = {
     overflow: 'hidden'
 }
 
+var freezeScroll = function(e) {
+    e.preventDefault();
+}
+
 export default class ImgView extends React.Component {
 
     componentDidMount() {
-        document.getElementById('no-scroll-content').classList.add('scroll-lock');
+        if( isMobile) {
+            document.getElementById('app').addEventListener("touchmove", freezeScroll, false)
+        } else {
+            document.getElementById('app').classList.add('scroll-lock');
+        }
+        
+        //alert(document.getElementById('app').classList)
     }
 
     componentWillUnmount() {
-        document.getElementById('no-scroll-content').classList.remove('scroll-lock');
+        if( isMobile) {
+            document.getElementById('app').removeEventListener("touchmove", freezeScroll, false)
+        } else {
+            document.getElementById('app').classList.remove('scroll-lock');
+        }
     }
 
     render() {
         return(
-            <div style={{ zIndex: 300 }} >
+            <div style={{ zIndex: 500 }} >
                 <div style={backdropStyle} id='backdrop' onClick={e => this.props.showImg(null)} />
                 <div style={{ position: 'fixed', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
                     <img src={imgArr[this.props.index]} alt="" style={{ maxWidth: '80vw', maxHeight: '80vh'}}/>
