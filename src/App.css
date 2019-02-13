@@ -8,6 +8,11 @@
   src: url("./assets/fonts/Muri/Muli-ExtraLight.ttf");
 }
 
+@font-face {
+  font-family: 'Muri-light';
+  src: url("./assets/fonts/Muri/Muli-Light.ttf");
+}
+
 @keyframes blink {
   0% {
     opacity: 0;
@@ -98,21 +103,21 @@ html, body {
 
 @media screen and (max-width: 465px) {
   .main-content-wrapper h3 {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
 .main-content-wrapper h4 {
   margin: 0;
-  font-family: 'Muri-xlight';
+  font-family: 'Muri-Light';
   padding-top: 10px;
-  font-size: 17px;
+  font-size: 18px;
   color: #4c4c4c;
 }
 
 @media screen and (max-width: 465px) {
   .main-content-wrapper h4 {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -204,15 +209,11 @@ html, body {
 }
 
 .tilt-container #logo-letters {
-  z-index: 100;
+  z-index: -100;
   position: absolute;
   height: 151.2px;
   width: 180px;
   top: 8.4px;
   left: 10px;
-}
-
-#backdrop {
-  -webkit-overflow-scrolling: touch;
 }
 /*# sourceMappingURL=app.css.map */

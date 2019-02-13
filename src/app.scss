@@ -8,6 +8,11 @@
     src: url('./assets/fonts/Muri/Muli-ExtraLight.ttf');
 }
 
+@font-face {
+    font-family: 'Muri-light';
+    src: url('./assets/fonts/Muri/Muli-Light.ttf');
+}
+
 @keyframes blink {
     0% { opacity: 0; }
     50% { opacity: 1; }
@@ -80,7 +85,7 @@ $md-grey: #4c4c4c;
 
     h3 {
         @media screen and (max-width: 465px) {
-            font-size: 16px;
+            font-size: 18px;
         }
         margin: 0;
         padding-top: 10px;
@@ -90,12 +95,12 @@ $md-grey: #4c4c4c;
 
     h4 {
         @media screen and (max-width: 465px) {
-            font-size: 16px;
+            font-size: 18px;
         }
         margin: 0;
-        font-family: 'Muri-xlight';
+        font-family: 'Muri-Light';
         padding-top: 10px;
-        font-size: 17px;
+        font-size: 18px;
         color: $md-grey;
     }
 }
@@ -165,7 +170,7 @@ $logo-size-lg: 200px;
     }
 
     #logo-letters {
-        z-index: 100;
+        z-index: -100;
         position: absolute;
         height: (.84) * ($logo-size-lg - 20px);
         width: 200px - 20px;
@@ -173,6 +178,6 @@ $logo-size-lg: 200px;
     }
 }
 
-#backdrop {
-    -webkit-overflow-scrolling: touch;
+.mobileLogo {
+    
 }
