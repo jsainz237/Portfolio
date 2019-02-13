@@ -31,7 +31,7 @@ class App extends Component {
         <Skills />
         <Projects />
         <div className='section-container' style={{ height: 500, backgroundColor: '#171717', width: '100vw' }}>
-          <div className='main-content-wrapper' style={{ padding: 0, maxWidth: '80vw', margin: isMobile ? '-100px 0 0 0' : 0 }}>
+          <div className='main-content-wrapper' style={{ padding: 0, maxWidth: '80vw', margin: 0 }}>
             <h1><span className="blink">[</span>More Coming Soon<span className="blink">]</span></h1>
             <h3>I'll be continuously updating this site</h3>
             <h4>Come back another time for new stuff being added</h4>
