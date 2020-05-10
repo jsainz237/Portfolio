@@ -30,6 +30,7 @@ class Skills extends React.Component {
     desktopSkills = (
         <div id='skill-wrapper'>
             <Skill id='JS' bgColor='#F7DF1E' textColor='#323330' _this={this} >JavaScript</Skill>
+            <Skill id='TS' bgColor='#187abf' _this={this} >Typescript</Skill>
             <Skill id='React' bgColor='#272b34' textColor='#61dafb' _this={this}>React</Skill>
             <Skill id='Angular' bgColor='#256fc6' textColor='#c3002f' _this={this}>Angular</Skill>
             <Skill id='Node' bgColor="#333333" textColor="#3e863c" _this={this}>Node.js</Skill>
