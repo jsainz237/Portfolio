@@ -50,6 +50,7 @@ class Skills extends React.Component {
     mobileSkills = (
         <div id='skill-wrapper'>
             <SkillMobile id='JS' bgColor='#F7DF1E' textColor='#323330' _this={this} >JavaScript</SkillMobile>
+            <SkillMobile id='TS' bgColor='#187abf' _this={this} >Typescript</SkillMobile>
             <SkillMobile id='React' bgColor='#272b34' textColor='#61dafb' _this={this}>React</SkillMobile>
             <SkillMobile id='Angular' bgColor='#256fc6' textColor='#c3002f' _this={this}>Angular</SkillMobile>
             <SkillMobile id='Node' bgColor="#333333" textColor="#3e863c" _this={this}>Node.js</SkillMobile>
