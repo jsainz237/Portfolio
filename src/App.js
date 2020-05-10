@@ -10,6 +10,7 @@ import Projects from './Projects/Projects.index'
 import { DevProjects } from './DevProjects/DevProjects';
 import './app.css';
 import { isMobile } from 'react-device-detect';
+import { Contact } from './Contact/Contact.index';
 
 class App extends Component {
   
@@ -32,6 +33,7 @@ class App extends Component {
         <Skills />
         <Projects />
         <DevProjects />
+        <Contact />
       </div>
     );
   }

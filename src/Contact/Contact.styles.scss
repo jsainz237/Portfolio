@@ -1,0 +1,59 @@
+.contact-container {
+    display: flex;
+    min-height: max-content;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    background-color: #454851;
+    color: #171717;
+    //height: 500px;
+    font-family: 'Muri-bold';
+}
+
+.contact-title {
+    font-size: 3em;
+}
+
+.contact-wrapper {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 992px) {
+    .atSign {
+        display: none;
+    }
+
+    .contact-wrapper {
+        align-items: center;
+        margin-bottom: 50px;
+        height: auto;
+    }
+}
+
+.contact-details-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-icon {
+    margin-right: 15px;
+}
+
+.contact-link {
+    color: #171717;
+    margin: 0;
+    font-size: 1.3em;
+}
