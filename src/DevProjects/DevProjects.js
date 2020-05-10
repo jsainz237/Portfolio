@@ -2,7 +2,7 @@ import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
 
-import './DevProjects.styles.css';
+import './DevProjects.styles.scss';
 import { Tile } from './Tile/Tile.index';
 import Armada from '../assets/projects/Armada.png';
 import GoldCPR from '../assets/projects/GoldCPR.png';

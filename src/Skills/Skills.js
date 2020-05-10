@@ -1,5 +1,5 @@
 import React from 'react'
-import './Skills.css'
+import './Skills.scss'
 import { isMobile } from 'react-device-detect'
 
 const Skill = (props) => (

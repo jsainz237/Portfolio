@@ -1,7 +1,7 @@
 import React from 'react';
 import { isMobile } from 'react-device-detect';
 
-import './Tile.styles.css';
+import './Tile.styles.scss';
 
 export function Tile({ image, title, description, link, linkTitle }) {
     const [showOverlay, setShowOverlay] = React.useState(false);

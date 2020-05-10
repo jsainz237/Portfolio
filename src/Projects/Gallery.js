@@ -2,8 +2,8 @@ import React from 'react';
 import { imgObjects } from '../utils/images'
 import { isMobile } from 'react-device-detect'
 
-import './styling/GridItems/gridItems.css'
-import './styling/GridItems/gallery.css'
+import './styling/GridItems/gridItems.scss'
+import './styling/GridItems/gallery.scss'
 
 const LargeGridItem = (props) => (
     <div className='grid-item-large' id={props.id} onClick={e => props.showImg(props.src.index)}>

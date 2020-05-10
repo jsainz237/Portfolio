@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './linkStyling.css'
+import './linkStyling.scss'
 
 import { ReactComponent as LinkedInLogo } from '../assets/SVGs/LinkedIn.svg'
 import { ReactComponent as GithubLogo } from '../assets/SVGs/Github.svg'

@@ -8,7 +8,7 @@ import Opener from './Opener'
 import Skills from './Skills/Skills'
 import Projects from './Projects/Projects.index'
 import { DevProjects } from './DevProjects/DevProjects';
-import './app.css';
+import './app.scss';
 import { isMobile } from 'react-device-detect';
 import { Contact } from './Contact/Contact.index';
 

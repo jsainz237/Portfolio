@@ -1,8 +1,8 @@
 import React from 'react'
 //import { Link } from 'react-router-dom'
 
-import './styling/projects.css'
-import './styling/GridItems/gridItems.css'
+import './styling/projects.scss'
+import './styling/GridItems/gridItems.scss'
 
 import ImgView from './ImgView'
 import { LargeGallery, SmallGallery } from './Gallery';
