@@ -1,8 +1,8 @@
 import React from 'react'
-//import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 import { isMobile } from 'react-device-detect'
-
 import { imgArr } from '../utils/images'
+
+import './styling/ImgView.styles.scss';
 
 let backdropStyle = {
     position: 'fixed',
@@ -44,6 +44,7 @@ export default class ImgView extends React.Component {
                 <div style={backdropStyle} id='backdrop' onClick={e => this.props.showImg(null)} />
                 <div style={{ position: 'fixed', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}>
                     <img src={imgArr[this.props.index]} alt="" style={{ maxWidth: '80vw', maxHeight: '80vh'}}/>
+                    <p className='close-button' onClick={() => this.props.showImg(null)}>close</p>
                 </div>
             </div>
         )
