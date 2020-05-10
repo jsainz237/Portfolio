@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Muri';
+    src: url('../assets/fonts/Muri/Muli-Regular.ttf');
+}
+
+// @font-face {
+//     font-family: 'Muri-xlight';
+//     src: url('./assets/fonts/Muri/Muli-ExtraLight.ttf');
+// }
+
+// @font-face {
+//     font-family: 'Muri-light';
+//     src: url('./assets/fonts/Muri/Muli-Light.ttf');
+// }
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Muri';
+    font-size: 20px;
+    color: #717171;
+
+    h3 {
+        font-size: 20px;
+        padding: 5px 20px;
+        border-bottom: 3px solid #717171;
+    }
+}
+
+.projects-wrapper {
+    width: 95%;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+    // align-items: ;
+    flex-wrap: wrap;
+}
