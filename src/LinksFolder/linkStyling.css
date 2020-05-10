@@ -4,6 +4,8 @@
   background-color: white;
   margin: 0;
   z-index: 400;
+  -webkit-box-sizing: content-box !important;
+          box-sizing: content-box !important;
   transform: translateX(-20px);
   -webkit-transform: translateX(-20px);
   -moz-transform: translateX(-20px);
