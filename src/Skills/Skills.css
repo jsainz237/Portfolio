@@ -108,4 +108,20 @@
 .skill#RR:hover {
   color: white;
 }
+
+.skill#Angular:hover {
+  color: #c3002f;
+}
+
+.skill#Node:hover {
+  color: #3e863c;
+}
+
+.skill#Java:hover {
+  color: white;
+}
+
+.skill#Python:hover {
+  color: #ffd54b;
+}
 /*# sourceMappingURL=Skills.css.map */
