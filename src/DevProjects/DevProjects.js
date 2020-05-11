@@ -12,7 +12,7 @@ export function DevProjects() {
     return(
         <div className='projects-container' style={{ backgroundColor: '#171717', width: '100vw' }}>
             <h3>Projects</h3>
-            <Row className='projects-wrapper'>
+            <Row className='projects-wrapper' style={{ marginBottom: 50 }}>
                 <Col md={12} lg={4} style={{ marginBottom: 25 }}>
                     <Tile 
                         image={Armada}
