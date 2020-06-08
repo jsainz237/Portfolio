@@ -6,9 +6,11 @@ import React, { Component } from 'react';
 import Links from './LinksFolder/Links'
 import Opener from './Opener'
 import Skills from './Skills/Skills'
-import Projects from './Projects/projects'
-import './app.css';
+import Projects from './Projects/Projects.index'
+import { DevProjects } from './DevProjects/DevProjects';
+import './app.scss';
 import { isMobile } from 'react-device-detect';
+import { Contact } from './Contact/Contact.index';
 
 class App extends Component {
   
@@ -30,13 +32,8 @@ class App extends Component {
         <Opener />
         <Skills />
         <Projects />
-        <div className='section-container' style={{ height: 500, backgroundColor: '#171717', width: '100vw' }}>
-          <div className='main-content-wrapper' style={{ padding: 0, maxWidth: '80vw', margin: 0 }}>
-            <h1><span className="blink">[</span>More Coming Soon<span className="blink">]</span></h1>
-            <h3>I'll be continuously updating this site</h3>
-            <h4>Come back another time for new stuff being added</h4>
-          </div>
-        </div>
+        <DevProjects />
+        <Contact />
       </div>
     );
   }
