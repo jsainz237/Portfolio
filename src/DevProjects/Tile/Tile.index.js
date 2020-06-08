@@ -12,7 +12,7 @@ export function Tile({ image, title, description, link, linkTitle }) {
             <div className='tile-overlay' style={{ display: showOverlay ? 'flex' : 'none' }} onMouseLeave={() => setShowOverlay(false)}>
                 <p className='tile-title'>{title}</p>
                 <p className='tile-description'>{description}</p>
-                { link ? <a className="tile-link" href={link}>{linkTitle}</a> : null }
+                { link ? <a className="tile-link" target="_blank" href={link}>{linkTitle}</a> : null }
             </div>
         </div>
     );
