@@ -8,18 +8,29 @@ import Armada from '../assets/projects/Armada.png';
 import GoldCPR from '../assets/projects/GoldCPR.png';
 import TheButton from '../assets/projects/TheButton.png';
 import FunnelAPI from '../assets/projects/FunnelAPI.png';
+import MCNodeDemo from '../assets/projects/MCNodeDemo.png';
 
 export function DevProjects() {
     return(
         <div className='projects-container' style={{ backgroundColor: '#171717', width: '100vw' }}>
             <h3>Projects</h3>
             <Row className='projects-wrapper' style={{ marginBottom: 50, maxWidth: '80vw' }}>
-                <Col md={12} lg={4} style={{ marginBottom: 25 }}>
+                {/* <Col md={12} lg={4} style={{ marginBottom: 25 }}>
                     <Tile 
                         image={Armada}
                         title="SailPoint Design Guide"
                         description="Move SailPoint's PDF Design guide to static website 
                             using Gatsby.js, GraphQL, React, and Typescript." 
+                    />
+                </Col> */}
+                <Col md={12} lg={4} style={{ marginBottom: 25 }}>
+                    <Tile 
+                        image={MCNodeDemo}
+                        title="Server Statistics Dashboard"
+                        description="A demo project I did as part of a technical interview.
+                            Completed utilizing Typescript with React, Node.js + Express, and PostgreSQL."
+                        link="https://github.com/jsainz237/MC-Server-Panel-Demo"
+                        linkTitle="Github Repository"
                     />
                 </Col>
                 <Col md={12} lg={4} style={{ marginBottom: 25 }}>
